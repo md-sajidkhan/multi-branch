@@ -12,5 +12,10 @@ pipeline{
         sh "cat Welcome.txt"
       }
     }
+    stage('Print Branch'){
+      steps{
+	echo "${GIT_BRANCH}"
+      }
+    }
   }
 }
