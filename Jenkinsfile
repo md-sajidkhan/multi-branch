@@ -7,5 +7,10 @@ pipeline{
         sh "ls -lrt"
       }
     }
+    stage('Read Message'){
+      steps{
+        sh "cat Welcome.txt"
+      }
+    }
   }
 }
