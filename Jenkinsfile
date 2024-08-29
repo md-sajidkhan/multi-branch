@@ -14,7 +14,7 @@ pipeline{
     }
     stage('Print Branch'){
       steps{
-	echo "${GIT_BRANCH}"
+	echo "${GIT_BRANCH} and ${GIT_COMMIT}"
       }
     }
   }
