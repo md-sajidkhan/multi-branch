@@ -3,7 +3,8 @@ pipeline{
 
   stages{
     stage('Listing Files'){
-      sh "ls -lrt"
+      steps{
+        sh "ls -lrt"
     }
   }
 }
